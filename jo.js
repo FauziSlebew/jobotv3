@@ -3144,6 +3144,9 @@ menunya = `
 image = fs.readFileSync('./lib/jo.jpg'),
 jobotz.sendMessage(m.chat, { image: image, contextInfo: { mentionedJid: [m.key] }, caption: menunya })
 }
+tutor= fs.readFileSync('./src/hahaha.mp3')
+jobotz.sendMessage(m.chat, {audio: src, mimetype:'audio/mpeg', ptt:true }, {quoted:m})
+                        }
 break
 case 'listmenu':{
 if (!isCreator && !isBan) return
